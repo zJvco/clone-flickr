@@ -24,6 +24,7 @@ footer {
             list-style-type: none;
 
             li {
+                position: relative;
                 font-size: 0.9rem;
                 font-weight: bold;
 
@@ -58,6 +59,52 @@ footer {
 
                 .langs__options {
                     display: none;
+                    position: absolute;
+                    top: -1520%;
+                    left: -60%;
+                    padding: 15px 0;
+                    width: 150px;
+                    border: 1px solid rgba(0, 0, 0, 0.8);
+                    background-color: #FFF;
+                    border-radius: 5px;
+
+                    ul {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+
+                        li {
+                            display: flex;
+                            width: 100%;
+
+                            a {
+                                width: 100%;
+                                color: #888;
+                                padding: 5px 15px;
+                                font-size: 0.8rem;
+                            }
+
+                            a:hover {
+                                background-color: rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+
+                    .pointer__langs {
+                        position: absolute;
+                        bottom: -8px;
+                        right: 15px;
+                        width: 15px;
+                        height: 15px;
+                        transform: rotate(45deg);
+                        background-color: #FFF;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+                        border-right: 1px solid rgba(0, 0, 0, 0.8);
+                    }
+                }
+
+                .langs__options.show {
+                    display: block;
                 }
             }
         }

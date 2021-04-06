@@ -4,6 +4,7 @@
 
         .search {
             display: none;
+            margin: 0 10px 0 0;
         }
 
         .login-sign__Container {
@@ -149,6 +150,15 @@
                     width: 100%;
                     padding: 15px 0;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+                    .langs__options {
+                        top: -1120%;
+                        left: 0%;
+
+                        .pointer__langs {
+                            right: 80%;
+                        }
+                    }
                 }
 
                 li:nth-child(8) {

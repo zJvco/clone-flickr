@@ -23,13 +23,13 @@ header {
 
     .search {
         @include flexbox;
-        position: relative;
         width: 100%;
         opacity: .75;
-        padding: 0 5px;
+        padding: 2px 5px;
         border-radius: 2px;
         margin: 0 10%;
         background-color: #FFF;
+        transition: opacity 0.3s ease-in-out;
 
         label {
             margin: 5px;
@@ -53,6 +53,10 @@ header {
         }
     }
 
+    .search.show {
+        display: flex;
+    }
+
     .login-sign__Container {
         @include flexbox;
 
@@ -68,7 +72,11 @@ header {
                 color: #FFF;
                 font-size: 1.2rem;
                 cursor: pointer;
-            }  
+            }
+
+            #close-search {
+                display: none;
+            }
         }
 
         .ls {
