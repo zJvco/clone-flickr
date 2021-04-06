@@ -1,0 +1,102 @@
+@import 'variable';
+
+header {
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 15px 20px;
+    background-color: rgba(0, 0, 0, .25);
+    
+    .logo {
+
+        a {
+            text-decoration: none;
+
+            img {
+                width: 100px;
+            }
+        }
+    }
+
+    .search {
+        @include flexbox;
+        position: relative;
+        width: 100%;
+        opacity: .75;
+        padding: 0 5px;
+        border-radius: 2px;
+        margin: 0 10%;
+        background-color: #FFF;
+
+        label {
+            margin: 5px;
+            cursor: pointer;
+
+            .fa-search {
+                font-size: 1.2rem;
+                color: #666;
+            }
+        }
+
+        input {
+            width: 100%;
+            border: none;
+            outline: none;
+            margin: 0 5px;
+        }
+
+        input[type=search]::-webkit-search-cancel-button  {
+            appearance: none;
+        }
+    }
+
+    .login-sign__Container {
+        @include flexbox;
+
+        .search-icon__open {
+            display: none;
+            margin: 0 10px;
+            transform: translateY(2px);
+
+            button {
+                border: none;
+                outline: none;
+                background-color: transparent;
+                color: #FFF;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }  
+        }
+
+        .ls {
+            margin: 0 10px;
+
+            a {
+                white-space: nowrap;
+                text-decoration: none;
+                color: unset;
+                font-size: 0.9rem;
+            }
+        }
+
+        .login a {
+            color: #FFF;
+        }
+
+        .sign a {
+            padding: 8px 20px;
+            border-radius: 3px;
+            color: #000;
+            font-weight: bold;
+            background-color: #FFF;
+            transition: color 0.2s ease-in-out;
+        }
+
+        .sign a:hover {
+            color: #888;
+        }
+    }
+}

@@ -1,0 +1,108 @@
+@import 'variable';
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    width: 100%;
+    padding: 15px 30px;
+    color: #888;
+
+    .row-top__original {
+        width: 100%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 100%;
+            list-style-type: none;
+
+            li {
+                font-size: 0.9rem;
+                font-weight: bold;
+
+                a {
+                    text-decoration: none;
+                    color: unset;
+                    transition: color 0.2s ease-in-out;
+                }
+
+                a:hover {
+                    color: #FFF;
+                }
+
+                button {
+                    border: none;
+                    outline: none;
+                    background-color: transparent;
+                    color: unset;
+                    font-size: unset;
+                    font-weight: unset;
+                    cursor: pointer;
+                    transition: color 0.2s ease-in-out;
+
+                    .fa-angle-down {
+                        transform: translateY(2px);
+                    }
+                }
+
+                button:hover {
+                    color: #FFF;
+                }
+
+                .langs__options {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    .row-bottom__clone {
+        display: none;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+
+            li {
+                margin-right: 20px;
+                font-weight: bold;
+
+                a {
+                    color: #888;
+                    text-decoration: none;
+                    font-size: 0.9rem;
+                    transition: color 0.2s ease-in-out;
+                }
+
+                a:hover {
+                    color: #FFF;
+                }
+            }
+        }
+    }
+
+    .socials__container {
+        white-space: nowrap;
+        margin-left: 2%;
+
+        a {
+            font-size: 1.4rem;
+            margin: 0 20px;
+            color: #888;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #FFF;
+        }
+    }
+}

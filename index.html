@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
     <script src="js/script.js" defer></script>
     <script src="icon/all.min.js"></script>
     <title>Encontre sua inspiração. | Flickr</title>
@@ -15,103 +19,125 @@
             <a href="index.html"><img src="img/logo-img.png" alt="logo"></a>
         </div>
         <div class="search">
-            <i class="fas fa-search"></i>
+            <label for="search"><i class="fas fa-search"></i></label>
             <input type="search" name="search" id="search" placeholder="Fotos, pessoas ou grupos">
         </div>
-        <div class="login-Sign__Container">
-            <div class="login">
+        <div class="login-sign__Container">
+            <div class="search-icon__open">
+                <button id="open-search">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="ls login">
                 <a href="#">Login</a>
             </div>
-            <div class="sign">
+            <div class="ls sign">
                 <a href="#">Cadastre-se</a>
             </div>
         </div>
     </header>
     <main>
         <div class="center__container">
-            <h1>Encontre sua inspiração</h1>
+            <h1>Encontre sua inspiração.</h1>
             <p>Participe da comunidade do Flickr, onde você encontra bilhões de fotos e 2 milhões de grupos.</p>
             <a href="#">Comece de graça</a>
         </div>
         <div class="createdBy__container">
-            <div class="art-name">
+            <div class="name-art-creator">
                 <a href="#">A time of change</a>
             </div>
-            </div class="creatorOfArt">
+            <div class="name-art-creator">
                 <a href="#">por Daniel Cheong</a>
             </div>
         </div>
     </main>
     <footer>
-        <ul>
-            <li>
-                <a href="#">Sobre</a>
-            </li>
-            <li>
-                <a href="#">Empregos</a>
-            </li>
-            <li>
-                <a href="#">Blog</a>
-            </li>
-            <li>
-                <a href="#">Desenvolvedores</a>
-            </li>
-            <li>
-                <a href="#">Diretrizes</a>
-            </li>
-            <li>
-                <a href="#">Ajuda</a>
-            </li>
-            <li>
-                <a href="#">Fórum de ajuda</a>
-            </li>
-            <li>
-                <a href="#">Privacidade</a>
-            </li>
-            <li>
-                <a href="#">Termos</a>
-            </li>
-            <li>
-                <a href="#">Cookies</a>
-            </li>
-            <li>
-                <button>
-                    <span>Portugues</span>
-                    <i class="fas fa-angle-down"></i>
-                </button>
-                <div class="langs__options">
-                    <ul>
-                        <li>
-                            <a href="#">English</a>
-                        </li>
-                        <li>
-                            <a href="#">繁體中文</a>
-                        </li>
-                        <li>
-                            <a href="#">Deutsch</a>
-                        </li>
-                        <li>
-                            <a href="#">Español</a>
-                        </li>
-                        <li>
-                            <a href="#">Français</a>
-                        </li>
-                        <li>
-                            <a href="#">한글</a>
-                        </li>
-                        <li>
-                            <a href="#">Italiano</a>
-                        </li>
-                        <li>
-                            <a href="#">Tiếng Việt</a>
-                        </li>
-                        <li>
-                            <a href="#">Bahasa Indonesia</a>
-                        </li>
-                    </ul>
-                </div>
-            </li>
-        </ul>
+        <div class="row-top__original">
+            <ul>
+                <li>
+                    <a href="#">Sobre</a>
+                </li>
+                <li>
+                    <a href="#">Empregos</a>
+                </li>
+                <li>
+                    <a href="#">Blog</a>
+                </li>
+                <li>
+                    <a href="#">Desenvolvedores</a>
+                </li>
+                <li>
+                    <a href="#">Diretrizes</a>
+                </li>
+                <li>
+                    <a href="#">Ajuda</a>
+                </li>
+                <li>
+                    <a href="#">Fórum de ajuda</a>
+                </li>
+                <li>
+                    <a href="#">Privacidade</a>
+                </li>
+                <li>
+                    <a href="#">Termos</a>
+                </li>
+                <li>
+                    <a href="#">Cookies</a>
+                </li>
+                <li>
+                    <button>
+                        <span>Portugues</span>
+                        <i class="fas fa-angle-down"></i>
+                    </button>
+                    <div class="langs__options">
+                        <ul>
+                            <li>
+                                <a href="#">English</a>
+                            </li>
+                            <li>
+                                <a href="#">繁體中文</a>
+                            </li>
+                            <li>
+                                <a href="#">Deutsch</a>
+                            </li>
+                            <li>
+                                <a href="#">Español</a>
+                            </li>
+                            <li>
+                                <a href="#">Français</a>
+                            </li>
+                            <li>
+                                <a href="#">한글</a>
+                            </li>
+                            <li>
+                                <a href="#">Italiano</a>
+                            </li>
+                            <li>
+                                <a href="#">Tiếng Việt</a>
+                            </li>
+                            <li>
+                                <a href="#">Bahasa Indonesia</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="row-bottom__clone">
+            <ul>
+                <li>
+                    <a href="#">Privacidade</a>
+                </li>
+                <li>
+                    <a href="#">Termos</a>
+                </li>
+                <li>
+                    <a href="#">Cookies</a>
+                </li>
+            </ul>
+        </div>
+
         <div class="socials__container">
             <a href="#"><i class="fab fa-facebook-square"></i></a>
             <a href="#"><i class="fab fa-twitter"></i></a>

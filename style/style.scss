@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import 'variable';
+@import 'header';
+@import 'content';
+@import 'footer';
+@import 'responsive';
+
 * {
     margin: 0;
     padding: 0;
@@ -5,5 +12,5 @@
 }
 
 body {
-    font-family: Proxima Nova, Helvetica neue, Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
 }

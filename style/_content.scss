@@ -1,0 +1,62 @@
+@import 'variable';
+
+main {
+    @include flexbox;
+    position: relative;
+    flex-direction: column;
+    text-align: center;
+    background-image: url(../img/Mists_of_renfrew_Adam_Gibbs.jpg);
+    background-position: center center;
+    min-height: 95vh;
+
+    .center__container {
+        width: 100%;
+        max-width: 600px;
+
+        h1 {
+            margin-bottom: 25px;
+            font-size: 3rem;
+            color: #FFF;
+        }
+
+        p {
+            margin-bottom: 60px;
+            font-size: 1.5rem;
+            color: #FFF;
+        }
+
+        a {
+            text-decoration: none;
+            padding: 15px 20px;
+            color: #000;
+            font-weight: bold;
+            font-size: 1.4rem;
+            border-radius: 3px;
+            background-color: #FFF;
+            transition: color 0.2s ease-in-out;
+        }
+
+        a:hover {
+            color: #888;
+        }
+    }
+
+    .createdBy__container {
+        position: absolute;
+        bottom: 20px;
+
+        .name-art-creator {
+            margin: 5px 0;
+
+            a {
+                color: #FFF;
+                text-decoration: none;
+                font-size: 0.9rem;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
