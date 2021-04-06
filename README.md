@@ -1,1 +1,1 @@
-Projeto clone da pagina "Flickr"
+Projeto clone da página "Flickr"
